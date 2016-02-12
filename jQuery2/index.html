@@ -3,36 +3,42 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
 	<title>Listo</title>
 	</head>
 <body>
-<header>
-	<div>GET SHIT DONE WITH</div>
-	<h1>LISTO</h1>
-</header>
 
+<header>
+
+	<div>GET SHIT DONE <i>WITH</i></div>
+	<span>LISTO</span>
+</header>
+<!-- the "create new" button -->
 <div class='new-item-header'>
-	<button href="#" class="pull-right pencil" id="newListItem" style="">Create New To-Do List</button>
-	<div id="formInput">
+	<button href="#" id="newListItem" style="">Create New To-Do List</button>
+
+<!-- form and input field -->
+<div id="formInput">
   <form id="newTaskForm">
-  <label>New Item</label>
-  <input id="newItemInput" placeholder="new task">
-  <button id="saveNewItem">Save</button>
-  <button id="cancel">Cancel</button>
+	  <label>What do you need to get done?</label>
+	  <input id="newItemInput" placeholder="Progress is Key">
+	  <button id="saveNewItem">Save</button>
+	  <button id="cancel">Cancel</button>
   </form>
 </div>
 </div>
 <div class="triColumn">
 	<div id="newList">
-		New List
+		<u>New List</u>
 	</div>
 
 	<div class="panel">
-		In Progress
+		<u>In Progress</u>
 		<ul class="list-group" id="currentList"></ul>
 	</div>
 	<div class="panel">
-		Archived
+		<u>Archived</u>
 		<ul class="list-group" id="archivedList"></ul>
 	</div>
 </div>
