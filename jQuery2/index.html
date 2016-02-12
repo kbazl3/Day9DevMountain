@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Listo</title>
 	</head>
 <body>
+<header>
+	<div>GET SHIT DONE WITH</div>
+	<h1>LISTO</h1>
+</header>
+
+<div class='new-item-header'>
+	<button href="#" class="pull-right pencil" id="newListItem" style="">Create New To-Do List</button>
+	<div id="formInput">
+  <form id="newTaskForm">
+  <label>New Item</label>
+  <input id="newItemInput" placeholder="new task">
+  <button id="saveNewItem">Save</button>
+  <button id="cancel">Cancel</button>
+  </form>
+</div>
+</div>
+<div class="triColumn">
+	<div id="newList">
+		New List
+	</div>
+
+	<div class="panel">
+		In Progress
+		<ul class="list-group" id="currentList"></ul>
+	</div>
+	<div class="panel">
+		Archived
+		<ul class="list-group" id="archivedList"></ul>
+	</div>
+</div>
+
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="app/scripts/app.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
